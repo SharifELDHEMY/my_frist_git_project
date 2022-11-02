@@ -1,0 +1,6 @@
+FROM openjdk 
+WORKDIR /application
+COPY sharif.java .
+RUN javac sharif.java
+
+CMD java sharif
